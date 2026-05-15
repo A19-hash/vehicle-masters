@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vehicle Masters</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="nav-left">
+            <div class="logo">
+                VEHICLE MASTERS
+            </div>
+            <a href="#" class="book-btn">
+                BOOK SERVICE
+            </a>
+        </div>
+
+        <ul>
+
+            <li><a href="#">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="welcome">
+                WELCOME TO
+            </p>
+
+            <h1>
+                VEHICLE <br>
+                <span>MASTERS</span>
+            </h1>
+
+            <p class="hero-text">
+                Professional Car Repair & Maintenance Services
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="tel:+917006128344" class="call-btn">
+                    CALL NOW
+                </a>
+
+                <a href="https://wa.me/917006128344" class="whatsapp-btn">
+                    WHATSAPP
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section class="stats">
+
+        <div class="stat-box">
+            <h2>15+</h2>
+            <p>Experienced Staff</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>10K+</h2>
+            <p>Happy Customers</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>20+</h2>
+            <p>Services Offered</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>100%</h2>
+            <p>Customer Satisfaction</p>
+        </div>
+
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="services" id="services">
+
+        <p class="small-heading">
+            WHAT WE DO
+        </p>
+
+        <h1 class="main-heading">
+            OUR SERVICES
+        </h1>
+
+        <div class="service-container">
+
+            <div class="card">
+
+                <img src="./images/engine.jpg">
+
+                <div class="card-content">
+
+                    <h2>ALL PARTS REPAIR</h2>
+
+                    <p>
+                        Complete engine diagnostics, Painting & repair, Brake & suspension, Electrical systems,
+                        Transmission & drivetrain, Air conditioning, Exhaust systems, Tire services.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="./images/speed.jpg">
+
+                <div class="card-content">
+
+                    <h2>DIAGNOSTICS</h2>
+
+                    <p>
+                        Advanced scanning & problem solving for all vehicle systems to ensure optimal performance and
+                        safety.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="./images/oil.jpg">
+
+                <div class="card-content">
+
+                    <h2>OIL CHANGE</h2>
+
+                    <p>
+                        High quality oil replacement and filter service to keep your engine running smoothly and
+                        efficiently.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="about-text">
+
+            <h1>ABOUT US</h1>
+
+            <p>
+                At Vehicle Masters, we believe every customer deserves honest service, quality workmanship, and complete
+                peace of mind. With experienced technicians, modern equipment, and a commitment to customer
+                satisfaction, we provide reliable repair and maintenance services for all types of vehicles. From
+                routine servicing to advanced diagnostics and repairs, our team focuses on delivering professional
+                results with transparency and care. Over the years, we have built the trust of hundreds of customers
+                through dependable service, fair pricing, and timely work because your vehicle’s safety and performance
+                are our top priority.
+
+            </p>
+
+        </div>
+
+        <div class="about-image">
+
+            <img src="./images/team.jpg">
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <div class="contact-box">
+            <h2>CALL US</h2>
+            <p>+91 7006128344</p>
+        </div>
+
+        <div class="contact-box">
+            <h2>LOCATION</h2>
+            <p>Chadoora Budgam,Near IOC Petrol Pump, Jammu & Kashmir</p>
+            <p class="owner-note">Owner: Tanveer Ahmad Wani</p>
+        </div>
+
+        <div class="contact-box">
+            <h2>WORKING HOURS</h2>
+            <p>Mon - Sat : 9AM - 5PM</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Vehicle Masters | All Rights Reserved
+    </footer>
+
+    <div class="modal-overlay hidden" id="bookingModal">
+        <div class="modal">
+            <button class="modal-close" id="bookingClose" aria-label="Close booking form">×</button>
+            <h2>Book Service</h2>
+            <p>Please provide your details and issue below.</p>
+            <form id="bookingForm">
+                <label for="customerName">Name</label>
+                <input type="text" id="customerName" name="customerName" placeholder="Your name" required>
+
+                <label for="carNumber">Car Number</label>
+                <input type="text" id="carNumber" name="carNumber" placeholder="Your car number" required>
+
+                <label for="customerAddress">Address</label>
+                <input type="text" id="customerAddress" name="customerAddress" placeholder="Your address" required>
+
+                <label for="carIssue">Issue</label>
+                <textarea id="carIssue" name="carIssue" placeholder="Describe the issue" rows="4" required></textarea>
+
+                <button type="submit" class="submit-btn">Send via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
